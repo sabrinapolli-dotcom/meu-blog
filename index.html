@@ -1,42 +1,124 @@
-<!DOCTYPE html> 
-<html lang="pt-br"> 
-<head> 
-<meta charset="UTF-8"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Blog</title> 
-<style> 
-header{ 
-background-color:#280380;
-color:#1c008a;
-text-align: center; 
-max-width: 800px; 
-margin: 0 auto; 
-padding: 16px; 
-} 
-main{ 
-background-color: #13038f;
-color: #5aff47;
-max-width: 800px; 
-margin: 0 auto; 
-padding: 16px; 
-} width: 80px; 
-img{ 
+<!DOCTYPE html>
+<html lang="pt-br">
 
-height: 80px; 
-} 
-</style> 
-</head> 
-<body> 
-<header> 
-<h1>sabrina#GTR R35;</h1> 
-<p>Vou compartilhar um pouco sobre mim;</p> </header> 
-<main> 
-<img src="carro.png" alt="Fotografia em ângulo três quartos de um carro esportivo Nissan GT-R R35 modificado e rebaixado, pintado em azul metálico brilhante. O carro está estacionado em uma rua urbana movimentada no Japão ao anoitecer, com o asfalto levemente úmido. Ele possui rodas esportivas pretas de seis raios com pinças de freio vermelhas visíveis, saias laterais e um divisor dianteiro em fibra de carbono, além de um grande aerofólio traseiro. Ao fundo, há fachadas de lojas iluminadas com letreiros em neon e caracteres japoneses (Kanji), incluindo um grande logo da GT-R em um edifício, pedestres caminhando pelas calçadas e postes de luz acesos, criando uma atmosfera noturna vibrante."> 
-<h2>Bem-Vindos ao sabrina#GTR R35;!</h2> 
-<p>Por: sabrina telles polli</p> 
-<p>Fala, galera! Sejam muito bem-vindos ao meu espaço!</p> 
-<p>Fala, galera! Sejam muito bem-vindos ao meu espaço! Todos podem me chamar de Sasa, e criei o sabrina#GTR R35— com essa vibe icônica em roxo e verde, gostaram?. -vamos começar a falar sobre carros, que é um dos meus pontos mais fracos, carro me fascina, é tipo um esporte viciante para mim, para falar disso, quero saber a opinião de vocẽs sobre carros, vocês gostam?��✨</p> 
-</main>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog GT-R R35</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #6a1b9a; /* Roxo principal */
+            color: #e0f7fa; /* Azul claro para o texto */
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 16px;
+            border-radius: 8px 8px 0 0;
+        }
+
+        main {
+            background-color: #8e24aa; /* Roxo para a área principal */
+            color: #ffffff;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 16px;
+            border-radius: 0 0 8px 8px;
+        }
+
+        article {
+            display: flex;
+            gap: 16px;
+            background-color: #4a148c; /* Roxo mais escuro para os cards */
+            padding: 16px;
+            margin-bottom: 16px;
+            border-radius: 8px;
+            align-items: center;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid #80deea; /* Borda azul clara */
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+            color: #80deea; /* Azul claro */
+        }
+
+        button {
+            background-color: #80deea; /* Azul claro */
+            color: #4a148c;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 8px;
+            margin-right: 4px;
+        }
+
+        button:hover {
+            background-color: #4dd0e1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Universo GT-R R35</h1>
+        <p>Vou compartilhar sobre a história, alta performance e curiosidades do lendário Godzilla dos esportivos!</p>
+    </header>
+    <main>
+        <article>
+            <img src="imagem-blog.png" alt="Foto frontal de um Nissan GT-R R35 roxo.">
+            <div>
+                <h2>O Nascimento do Godzilla: A História do GT-R R35</h2>
+                <p class="artigo-autor">Por: Sabrina Telles Polli</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar sobre o lendário Nissan GT-R R35. Lançado para revolucionar o mundo dos supercarros, o R35 combinou tração integral e um motor VR38DETT V6 bi-turbo impressionante.</p>
+                <button>❤️ <span>0</span></button>
+                <button>👍 <span>0</span></button>
+            </div>
+        </article>
+        <article>
+            <img src="imagem-blog.png" alt="Nissan GT-R R35 em alta velocidade na pista.">
+            <div>
+                <h2>Performance e Tecnologia de Ponta</h2>
+                <p class="artigo-autor">Por: Sabrina Telles Polli</p>
+                <p>O R35 não é chamado de "Godzilla" por acaso. Seu sistema de controle de largada e o câmbio de dupla embreagem permitem acelerações de 0 a 100 km/h em menos de 3 segundos, desafiando exóticos muito mais caros.</p>
+                <button>❤️ <span>0</span></button>
+                <button>👍 <span>0</span></button>
+            </div>
+        </article>
+    </main>
 </body>
+<script>
+    const botoes = document.querySelectorAll("button");
+
+    botoes.forEach(function (botao) {
+        let curtiu = false;
+        botao.addEventListener("click", botaoClicado);
+        function botaoClicado() {
+            console.log("fui clicado");
+            let texto = botao.querySelector("span");
+            if (curtiu === false) {
+                texto.textContent++;
+                curtiu = true;
+            } else {
+                texto.textContent--;
+                curtiu = false;
+            }
+        }
+    })
+</script>
+
 </html>
-
-
